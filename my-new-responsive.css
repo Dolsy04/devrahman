@@ -1,0 +1,466 @@
+/* ---------tablet-screen----------- */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header{
+            width: 100%;
+    }
+    header .bar{
+        display: block;
+    }
+    .toggle-theme{
+        display: none;
+    }
+    header nav ul .nav-dark-toggle{
+        display: block;
+        /* margin-bottom: 120px; */
+        margin: 0;
+    }
+    nav{
+        position: fixed;
+        right: -800px;
+        top: 58px;
+        width: 100%;
+        height: 100vh;
+        background: var(--header-background);
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+        overflow-x: scroll;
+        padding: 0 0 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav.active{
+        right: 0;
+    }
+    nav ul li{
+        margin-right: 0;
+        margin-top: 8px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    /* -----------hero-section---------- */
+    #home{
+        /* height: 300px; */
+        scroll-margin-top: 70px;
+        height: 100vh;
+        margin: 30px 0 150px;
+    }
+    .hero-section{
+        width: 100%;
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+    }
+    .hero-section .hero-note{
+        margin: 0 0 0 0px;
+    }
+    .my-image-container{
+        margin: 20px 0 0;
+    }
+    
+
+    .my-image-container .spin{
+        width: 100px;
+        height: 100px;
+        background-color: var(--border-color);
+        position: absolute;
+        top: -20px;
+        left: -40px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .my-image-container .spin2{
+        width: 100px;
+        height: 100px;
+        background-color: var(--border-color);
+        position: absolute;
+        bottom: -20px;
+        right: -40px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .my-image-container .spin3{
+        width: 100px;
+        height: 100px;
+        background-color: var(--border-color);
+        position: absolute;
+        bottom: -20px;
+        left: -40px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .my-image-container .spin4{
+        width: 100px;
+        height: 100px;
+        background-color: var(--border-color);
+        position: absolute;
+        top: -20px;
+        right: -40px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+
+    /* ----------About -----Me---------- */
+    #about{
+        margin: 150px 0;
+    }
+    #about .about-item{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+    }
+    #about .about-me-note{
+        width: 90%;
+    }
+    #about .about-details .about-image{
+        height: 450px;
+        width: 350px;
+    }
+    /* ----------skill---------- */
+    .skill-title-line-container{
+        width: 100%;
+    }
+    .skill-title-container{
+        margin-bottom: 30px;
+    }
+    .skill-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .skill-item{
+        width: 90%;
+    }
+    .skill-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .skill-text p{
+        text-align: center;
+    }
+    /* }--------------services---------- */
+    .services-list .services-item{
+        width: 20%;
+    }
+    /* ----------project---------- */
+    .project-title-container{
+        width: 100%;
+    }
+    .project-list{
+        width: 100%;
+    }
+    .project-items{
+        width: 60%;
+    }
+    /* ---------contact-me--------- */
+    #contact{
+        scroll-margin-top: 70px;
+    }
+    .contact-title-container{
+        width: 100%;
+    }
+    .form-contact{
+        width: 80%;
+    }
+    .send-button-container .line::before{
+        left: 270px;
+        top: 25px;
+    }
+    .send-button-container .line-two::before{
+        right: 270px;
+        top: 25px;
+    }
+    footer{
+        margin-top: 10px;
+    }
+}
+
+
+/* ---------mobile-screen----------- */
+
+@media screen and (max-width: 767px) {
+    
+    header{
+        width: 100%;
+    }
+    header .bar{
+        display: block;
+    }
+    .toggle-theme{
+        display: none;
+    }
+    header nav ul .nav-dark-toggle{
+        display: block;
+        /* margin-bottom: 120px; */
+        margin: 0;
+    }
+    nav{
+        position: fixed;
+        right: -800px;
+        top: 58px;
+        width: 100%;
+        height: 100vh;
+        background: var(--header-background);
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+        overflow-x: scroll;
+        padding: 0 0 20px;
+    }
+    nav ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    nav.active{
+        right: 0;
+    }
+    nav ul li{
+        margin-right: 0;
+        margin-top: 8px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    /* -----------hero-section---------- */
+    #home{
+        scroll-margin-top: 70px;
+        height: 100vh;
+        margin: 30px 0 150px;
+    }
+    .hero-section{
+        flex-direction: column;
+        height: auto;
+        gap: 40px;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .hero-section .hero-note{
+        margin: 0;
+    }
+    .hero-section .hero-note .my-name{
+        font-size: 20px;
+    }
+    .hero-section .hero-note .front-end-note{
+        font-size: 15px;
+    }
+    .hero-section .quick-contact-icons ul{
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 8px;
+    }
+    .my-image-container{
+        margin: 20px 0 0;
+    }
+    .my-image-container img{
+        width: 200px;
+        height: 200px;
+    }
+
+    .my-image-container .spin{
+        width: 80px;
+        height: 80px;
+        background-color: var(--border-color);
+        position: absolute;
+        top: 0px;
+        left: -20px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+
+    .my-image-container .spin2{
+        width: 80px;
+        height: 80px;
+        background-color: var(--border-color);
+        position: absolute;
+        bottom: 0px;
+        right: -20px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .my-image-container .spin3{
+        width: 80px;
+        height: 80px;
+        background-color: var(--border-color);
+        position: absolute;
+        bottom: 0px;
+        left: -20px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    .my-image-container .spin4{
+        width: 80px;
+        height: 80px;
+        background-color: var(--border-color);
+        position: absolute;
+        top: -20;
+        right: -20px;
+        border-radius: 50%;
+        z-index: -1;
+    }
+    
+
+    /* ----------About -----Me---------- */
+    #about{
+        margin: 150px 0;
+    }
+    #about .about-item{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    #about .about-me-note{
+        width: 90%;
+    }
+    #about .about-details .about-image{
+        width: 200px;
+        height: 300px;
+        margin: 0;
+        padding: 0;
+    }
+    #about .about-me-note p {
+        font: 300 15px 'poppins',sans-serif;
+    }
+    /* ----------skill---------- */
+    .skill-title-container .skill-title {
+        font-size: 25px;
+    }
+    .skill-title-container{
+        margin-bottom: 30px;
+    }
+    .skill-details{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 5px;
+    }
+    .skill-item{
+        margin: 0 auto;
+        width: 90%;
+        flex-wrap: wrap;
+    }
+    .skill-list{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .skill-text{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .skill-text p{
+        text-align: center;
+        font-size: 15px;
+    }
+    /* }--------------services---------- */
+    .services-list .services-item{
+        width: 20%;
+    }
+    /* ----------project---------- */
+    #project{
+        padding: 0;
+        margin: 0;
+    }
+    .project-title-container{
+        width: 100%;
+    }
+    .project-list{
+        width: 90%;
+    }
+    .project-items{
+        width: 100%;
+    max-width: 100%;
+    }
+    .project-image {
+        max-width: 100%;
+        height: auto;
+    }
+    .project-items .project-details h3 {
+        font-size: 15px;
+        width: 70%;
+    }
+    .project-items .project-details div {
+        width: 30%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+    .project-items .project-details div button{
+        padding: 5px 5px;
+        font: 600 15px 'poppins',sans-serif;
+        letter-spacing: 2px;
+        background: var(--body-background);
+        color: var(--text-color);
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.7s ease;
+    }
+    .project-items .project-details div button:nth-child(2){
+        margin: 0;
+    }
+    /* ---------contact-me--------- */
+    #contact{
+        scroll-margin-top: 70px;
+    }
+    .contact-title-container{
+        width: 100%;
+    }
+    .form-contact {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .names-container {
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 0;
+    }
+    .first-name-container, .other-name-container{
+        width: 100%;
+    }
+    .email-container, .text-area-container{
+        width: 100%;
+        margin: 20px 0 0;
+    }
+    .send-button-container{
+        width: 80%;
+    }
+    .social-media-link-icon {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .social-media-link-icon ul {
+        flex-wrap: wrap;
+        gap: 0px;
+        width: 100%;
+        
+    }
+    .social-media-link-icon ul li{
+        margin-right: 10px;
+    }
+    .social-media-link-icon ul .linked-image{
+        margin-left: 0;
+    }
+    footer{
+        margin-top: 10px;
+    }
+}
